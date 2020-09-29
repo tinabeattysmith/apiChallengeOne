@@ -1,6 +1,6 @@
 
 //BaseURL for ergast API
-let baseURL = "http://ergast.com/api/f1";
+let baseURL = "https://ergast.com/api/f1";
 //console.log(baseURL); // checking to make sure script file connected to HTML
 let seasonNumber;
 let url;
