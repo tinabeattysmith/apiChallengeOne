@@ -1,6 +1,6 @@
 
 //BaseURL for ergast API
-let baseURL = "https://ergast.com/api/f1";
+let baseURL = "https://ergast.com/api/f1/";
 //console.log(baseURL); // checking to make sure script file connected to HTML
 let seasonNumber;
 let url;
@@ -29,11 +29,11 @@ function fetchResults(e) {
        
         //updating the base url with season variable
         if(seasonNumber === '' ){
-            url=`${baseURL}/drivers.json`
+            url=`${baseURL}drivers.json`
         } else {
-            url=`${baseURL}/${seasonNumber}/drivers.json`
+            url=`${baseURL}${seasonNumber}/drivers.json`
         }
-        //console.log("URL", url);
+        console.log("URL", url);
 
      fetch(url)
         .then (function(result) {
