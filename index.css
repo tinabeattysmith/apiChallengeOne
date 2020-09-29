@@ -1,4 +1,40 @@
-h1 {
+
+.pageTitle {
+    text-align: center;
+    font-style: oblique;
+    color: maroon;
+}
+
+.search {
+    display: block;
+    background-color: lightgray;
+    background-image: url(./assets/race-car-24386__340.webp);
+    background-size: 300px;
+    background-position: 60vw 7vh;
+    height: 200px;
+    width: auto;
+    background-repeat: no-repeat;
+} 
+
+#driverQuery {
+    padding-top: 7vh;
+    padding-left: 10vw;
+}
+.tablewrapper {
+    display: grid;
+    justify-content: space-evenly;
+        background-color: gainsboro;    
+}
+
+.driverHeader{
+    border: solid black thin;
     text-align: center;
 }
 
+.driver{
+    border: solid black thin;
+}
+
+.tableRow {
+    border: solid black thin;
+}
