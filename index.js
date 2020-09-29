@@ -49,7 +49,7 @@ function fetchResults(e) {
     function displayResults(json) {
         let driver = json.MRData.DriverTable.Drivers;
         console.log("Drivers:", driver);
-         
+          
         if(driver.length === 0) {
             //console.log("No Results");
             para.innerHTML = "Please enter a four digit year later than 1940";
@@ -62,6 +62,12 @@ function fetchResults(e) {
                         console.log(id);}*/
 
                 let table = document.querySelector("table");
+                
+                
+            while (table.firstChild) {
+                table.removeChild(table.firstChild);
+                };
+                 
                 const data = Object.keys(driver[0]);
                 console.log("old: ", data);
 

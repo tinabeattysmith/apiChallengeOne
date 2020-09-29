@@ -22,19 +22,23 @@
 }
 .tablewrapper {
     display: grid;
-    justify-content: space-evenly;
-        background-color: gainsboro;    
+     background-color: gainsboro;    
 }
 
 .driverHeader{
     border: solid black thin;
     text-align: center;
+    font-size: small;
+    
 }
 
 .driver{
     border: solid black thin;
+    font-size: smaller;
+    
 }
 
-.tableRow {
+.tableRow td{
     border: solid black thin;
+    font-size: smaller;
 }
