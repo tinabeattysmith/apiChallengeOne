@@ -1,4 +1,3 @@
-
 //BaseURL for ergast API
 let baseURL = "https://ergast.com/api/f1/";
 //console.log(baseURL); // checking to make sure script file connected to HTML
@@ -51,7 +50,7 @@ function fetchResults(e) {
           
         if(driver.length === 0) {
             //console.log("No Results");
-            para.innerHTML = "Please enter a four digit year later than 1940";
+            para.innerHTML = "Please enter a four digit year later than 1949";
             } else { 
                 /*for(let i = 0; i < driver.length; i++) { 
                     //console.log(i); // checking to see loop is working
