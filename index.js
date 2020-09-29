@@ -5,8 +5,6 @@ let baseURL = "https://ergast.com/api/f1/";
 let seasonNumber;
 let url;
 
-
-
 //declaring DOM elements to be manipulated
 const qSeason = document.getElementById('inputF1Season');
 const queryForm = document.querySelector('form');
@@ -33,7 +31,7 @@ function fetchResults(e) {
         } else {
             url=`${baseURL}${seasonNumber}/drivers.json`
         }
-        console.log("URL", url);
+        //console.log("URL", url);
 
      fetch(url)
         .then (function(result) {
@@ -41,7 +39,7 @@ function fetchResults(e) {
             return result.json();
         })
         .then (function(json) {
-            //console.log("JSON: ", json);
+            console.log("JSON: ", json);
             displayResults(json);
         });
     };
@@ -49,6 +47,7 @@ function fetchResults(e) {
     function displayResults(json) {
         let driver = json.MRData.DriverTable.Drivers;
         console.log("Drivers:", driver);
+        
           
         if(driver.length === 0) {
             //console.log("No Results");
@@ -57,20 +56,15 @@ function fetchResults(e) {
                 /*for(let i = 0; i < driver.length; i++) { 
                     //console.log(i); // checking to see loop is working
                     let current = driver[i]; // each time the index is incrememted, it is set as current.
-                    console.log("Current:", current);
-                    let id = Object.driverID;
-                        console.log(id);}*/
-
-                let table = document.querySelector("table");
-                
-                
-            while (table.firstChild) {
-                table.removeChild(table.firstChild);
-                };
+                    console.log("Current:", current);*/
+              
+                let table = document.querySelector("table");  
+                while (table.firstChild) {
+                    table.removeChild(table.firstChild);
+                    };
                  
                 const data = Object.keys(driver[0]);
-                console.log("old: ", data);
-
+                //console.log("old: ", data);
                 
                 function generateTableHead(table, data) {
                     let thead = table.createTHead();

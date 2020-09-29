@@ -28,17 +28,17 @@
 .driverHeader{
     border: solid black thin;
     text-align: center;
-    font-size: small;
+    font-size: 12;
     
 }
 
 .driver{
     border: solid black thin;
-    font-size: smaller;
-    
+    font-size: 12;    
 }
 
 .tableRow td{
     border: solid black thin;
-    font-size: smaller;
+    font-size: 12;
+    padding-left: 1em;
 }
